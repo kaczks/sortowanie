@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.sortujBtn).setOnClickListener {
             val rand = Random()
+            findViewById<TextView>(R.id.WpyiszTW).setText("")
             for (int in 1 .. edit.text.toString().toInt() ) {
                 val a = rand.nextInt(edit.text.toString().toInt())
                 findViewById<TextView>(R.id.WpyiszTW).append(a.toString())
