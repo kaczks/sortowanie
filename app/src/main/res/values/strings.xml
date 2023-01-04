@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">sortowanie</string>
+    <string name="sortuj">sortuj</string>
+    <string name="losuj">losuj</string>
+    <string name="liczb">liczb</string>
+    <string name="ilo_liczb">Iloć liczb</string>
+</resources>
