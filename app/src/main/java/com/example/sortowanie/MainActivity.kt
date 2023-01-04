@@ -13,13 +13,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val edit = findViewById<EditText>(R.id.liczbyED)
+        val text = findViewById<TextView>(R.id.WpyiszTW)
 
-        findViewById<Button>(R.id.sortujBtn).setOnClickListener {
+        findViewById<Button>(R.id.losujBtn).setOnClickListener {
             val rand = Random()
-            findViewById<TextView>(R.id.WpyiszTW).setText("")
+            text.text=""
             for (int in 1 .. edit.text.toString().toInt() ) {
                 val a = rand.nextInt(edit.text.toString().toInt())
-                findViewById<TextView>(R.id.WpyiszTW).append(a.toString())
+                text.append(a.toString())
             }
         }
     }
